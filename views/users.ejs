@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        img {
+            width: 200px;
+            height: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px rgba(0,0,0, 0.3);
+        }
+    </style>
+</head>
+<body>
+        <h1>users</h1>
+
+           <% users.forEach((user) => { %>
+                <img src="<%= user.image %>" alt="NOT FOUND">
+                <h3>
+                    <%= user.username %>
+                </h3>
+                <p>
+                    <%= user.email %>
+                </p>
+           <% }) %>
+        
+</body>
+</html>
